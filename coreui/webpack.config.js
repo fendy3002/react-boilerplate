@@ -1,12 +1,12 @@
 const path = require('path');
 const configs = [{
     entry: {
-        index: path.resolve(__dirname, "src/index.ts")
+        index: path.resolve(__dirname, "src/index.tsx")
     },
     output: {
-        path: path.resolve(__dirname, 'es2015'),
+        path: path.resolve(__dirname, 'bin'),
         libraryTarget: "window",
-        library: "LogicalCompare",
+        library: "App",
         filename: "index.js",
     }
 }];
@@ -16,14 +16,14 @@ module.exports = [...configs.map(
         module: {
             rules: [
                 {
-                    test: /\.(ts)$/,
+                    test: /\.(tsx)$/,
                     resolve: {
-                        extensions: ['.ts', '.js', '.json']
+                        extensions: ['.tsx', '.ts', '.js', '.json']
                     },
                     exclude: /(node_modules|bower_components)/,
                     loader: 'ts-loader',
                     options: {
-                        configFile: "tsconfig.es2015.json"
+                        configFile: "tsconfig.json"
                     }
                 },
                 {
@@ -42,8 +42,7 @@ module.exports = [...configs.map(
                     test: /\.css$/,
                     loader: 'css-loader',
                     query: {
-                        modules: true,
-                        localIdentName: '[name]__[local]___[hash:base64:5]'
+                        modules: true
                     }
                 },
                 {

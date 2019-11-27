@@ -3,11 +3,25 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
+    "@fendy3002/react-components": "^0.0.1",
+    "@fendy3002/url-router": "^0.0.2",
+    "@types/node": "^12.12.14",
+    "@types/react": "^16.9.13",
+    "@types/react-dom": "^16.9.4",
+    "css-loader": "^3.2.0",
+    "lodash": "^4.17.15",
     "mobx": "^5.15.0",
+    "mobx-react": "^6.1.4",
     "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "style-loader": "^1.0.0",
     "typescript": "^3.7.2",
+    "url-loader": "^3.0.0",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "ts-loader": "^6.2.1"
   }
 }
