@@ -6,7 +6,7 @@ let MobxReact = require('mobx-react');
 import App from './App';
 import store from './store/index';
 
-export const index = (elem, option) => {
+const index = (elem, option) => {
     const defaultOption = {
 
     };
@@ -21,3 +21,4 @@ export const index = (elem, option) => {
         elem
     );
 };
+export default index;

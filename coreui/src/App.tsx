@@ -12,12 +12,10 @@ let coreUiFont = require('../css/coreui-icons.min.css');
 class App extends React.Component {
     constructor(props){
         super(props);
-        this.state = {
-
-        };
     }
+    
     render() {
-        let store = this.props.store;
+        //let store = this.props.store;
         return <div className={coreUi.card}>
             <div className={coreUi.cardHeader}>
                 App
