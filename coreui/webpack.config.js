@@ -33,7 +33,10 @@ module.exports = [...configs.map(
                         {
                             loader: "css-loader", // translates CSS into CommonJS
                             query: {
-                                modules: true
+                                modules: {
+                                    mode: 'local',
+                                    localIdentName: '[local]--[hash:base64:12]'
+                                },
                             }
                         },
                         "sass-loader", // compiles Sass to CSS, using Node Sass by default
@@ -47,7 +50,10 @@ module.exports = [...configs.map(
                     test: /\.css$/,
                     loader: 'css-loader',
                     query: {
-                        modules: true
+                        modules: {
+                            mode: 'local',
+                            localIdentName: '[local]--[hash:base64:12]'
+                        },
                     }
                 },
                 {
