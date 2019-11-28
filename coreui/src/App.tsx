@@ -19,7 +19,7 @@ class App extends React.Component {
         //let store = this.props.store;
         return <div className={coreUi.card}>
             <div className={coreUi.cardHeader}>
-                App
+                <h1>App</h1>
             </div>
             <div className={coreUi.cardBlock}>
                 Welcome to app
