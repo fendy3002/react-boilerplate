@@ -4,7 +4,8 @@ let mobxReact = require('mobx-react');
 
 let { observer, inject } = mobxReact;
 
-let coreUi = require('../css/coreui.min.css');
+//let coreUi = require('../css/coreui.min.css');
+let coreUi = require('../scss/coreui.scss');
 let coreUiFont = require('../css/coreui-icons.min.css');
 
 @inject("store")

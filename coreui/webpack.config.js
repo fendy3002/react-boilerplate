@@ -30,8 +30,13 @@ module.exports = [...configs.map(
                     test: /\.scss$/,
                     use: [
                         "style-loader", // creates style nodes from JS strings
-                        "css-loader", // translates CSS into CommonJS
-                        "sass-loader" // compiles Sass to CSS, using Node Sass by default
+                        {
+                            loader: "css-loader", // translates CSS into CommonJS
+                            query: {
+                                modules: true
+                            }
+                        },
+                        "sass-loader", // compiles Sass to CSS, using Node Sass by default
                     ]
                 },
                 {
